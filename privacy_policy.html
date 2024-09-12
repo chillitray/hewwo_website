@@ -21,11 +21,11 @@
         <a href="./terms_conditions.html">
           <button class="nav-button">Terms &amp; Conditions</button>
         </a>
-        <a style="text-decoration: none" href="">
-          <button class="nav-button download-button">
-            <i class="fab fa-google-play"></i> Download
-          </button>
-        </a>
+        <!-- <a style="text-decoration: none" href=""> -->
+        <button class="nav-button download-button">
+          <i class="fab fa-google-play"></i> Download
+        </button>
+        <!-- </a> -->
       </div>
       <div class="menu-toggle" onclick="toggleMenu()">
         <i class="fas fa-bars hamburger"></i>
@@ -43,6 +43,13 @@
         </button>
       </div>
     </nav>
+    <!-- Modal HTML -->
+    <div id="coming-soon-modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <p>Coming Soon</p>
+      </div>
+    </div>
     <div class="container">
       <div class="header">
         <h1>Privacy Policy – Language Learning App</h1>
@@ -285,5 +292,6 @@
       }
     </script>
     <script src="js/scroller.js"></script>
+    <script src="js/PopUp.js"></script>
   </body>
 </html>
