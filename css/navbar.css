@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+.navbar {
+  background: linear-gradient(45deg, #2596be, #f9f3f3);
+  height: 60px;
+  font-family: "Inter", system-ui;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: white;
+  z-index: 10000;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-button {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-button:hover {
+  background-color: #f1f1f1;
+  border-color: #d0d0d0;
+  transform: translateY(-2px);
+}
+
+.download-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.download-button i {
+  margin-right: 8px;
+  font-size: 1.1rem;
+}
+
+.download-button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-toggle i {
+  font-size: 1.5rem;
+}
+
+.hamburger {
+  display: block;
+}
+
+.close {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  top: 60px;
+  right: 0;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-height: calc(100vh - 60px);
+  overflow-y: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.mobile-menu.show {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .nav-buttons {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu-toggle .hamburger.hidden {
+    display: none;
+  }
+
+  .menu-toggle .close.hidden {
+    display: none;
+  }
+}
